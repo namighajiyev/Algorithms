@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=15
+org.eclipse.jdt.core.compiler.compliance=15
+org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
+org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
+org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=ignore
+# https://git.eclipse.org/c/platform/eclipse.platform.swt.git/plain/examples/org.eclipse.swt.examples.browser.demos/.settings/org.eclipse.jdt.core.prefs
+org.eclipse.jdt.core.compiler.problem.unclosedCloseable=ignore
+#org.eclipse.jdt.core.compiler.problem.unusedImport=ignore
+#org.eclipse.jdt.core.compiler.problem.uncheckedTypeOperation=ignore
+#org.eclipse.jdt.core.compiler.problem.unusedPrivateMember=ignore
+org.eclipse.jdt.core.compiler.processAnnotations=disabled
+org.eclipse.jdt.core.compiler.release=disabled
+org.eclipse.jdt.core.compiler.source=15
