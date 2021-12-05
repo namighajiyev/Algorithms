@@ -12,7 +12,7 @@ public class KnapsackDPTests {
     @Test
     public void testKnapsack() {
         KnapsackDP knapsackDP = new KnapsackDP();
-        KnapsackInput input = new KnapsackInput() {
+        KnapsackDP.Input input = new KnapsackDP.Input() {
             {
                 knapsackWeight = 4;
                 itemsValues = new int[] { 1500, 3000, 2000 };
@@ -20,13 +20,13 @@ public class KnapsackDPTests {
                 itemsCount = 3;
             }
         };
-        KnapsackResult result = knapsackDP
+        KnapsackDP.Result result = knapsackDP
                 .getResult(input);
         int maxValue = result.knapSackTable[3][4];
         assertEquals(maxValue, 3500);
         assertArrayEquals(result.selectedItemsIndexes, new int[] { 2, 0 });
 
-        input = new KnapsackInput() {
+        input = new KnapsackDP.Input() {
             {
                 knapsackWeight = 6;
                 itemsValues = new int[] { 10, 3, 9, 5, 6 };
