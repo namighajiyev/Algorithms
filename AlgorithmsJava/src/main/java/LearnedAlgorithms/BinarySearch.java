@@ -2,7 +2,7 @@ package LearnedAlgorithms;
 
 public class BinarySearch {
 
-    public int getResult(String[] items, String toBeFounded) {
+    public int search(String[] items, String toBeFounded) {
         int startIndex = 0;
         int endIndex = items.length - 1;
         while (endIndex >= startIndex) {

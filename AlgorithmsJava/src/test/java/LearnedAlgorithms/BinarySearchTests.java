@@ -10,45 +10,45 @@ public class BinarySearchTests {
     public void testBinarySearch() {
         String[] items = new String[] { "1", "2", "3", "4", "5" };
         BinarySearch binarySearch = new BinarySearch();
-        int result = binarySearch.getResult(items, "1");
+        int result = binarySearch.search(items, "1");
         assertEquals(result, 0);
-        result = binarySearch.getResult(items, "2");
+        result = binarySearch.search(items, "2");
         assertEquals(result, 1);
-        result = binarySearch.getResult(items, "3");
+        result = binarySearch.search(items, "3");
         assertEquals(result, 2);
-        result = binarySearch.getResult(items, "4");
+        result = binarySearch.search(items, "4");
         assertEquals(result, 3);
-        result = binarySearch.getResult(items, "5");
+        result = binarySearch.search(items, "5");
         assertEquals(result, 4);
-        result = binarySearch.getResult(items, "6");
+        result = binarySearch.search(items, "6");
         assertFalse(result >= 0);
 
         items = new String[] { "1", "2", "3", "4", "5", "6" };
-        result = binarySearch.getResult(items, "1");
+        result = binarySearch.search(items, "1");
         assertEquals(result, 0);
-        result = binarySearch.getResult(items, "2");
+        result = binarySearch.search(items, "2");
         assertEquals(result, 1);
-        result = binarySearch.getResult(items, "3");
+        result = binarySearch.search(items, "3");
         assertEquals(result, 2);
-        result = binarySearch.getResult(items, "4");
+        result = binarySearch.search(items, "4");
         assertEquals(result, 3);
-        result = binarySearch.getResult(items, "5");
+        result = binarySearch.search(items, "5");
         assertEquals(result, 4);
-        result = binarySearch.getResult(items, "6");
+        result = binarySearch.search(items, "6");
         assertEquals(result, 5);
-        result = binarySearch.getResult(items, "7");
+        result = binarySearch.search(items, "7");
         assertFalse(result >= 0);
 
         items = new String[] { "sometext" };
-        result = binarySearch.getResult(items, "sometext");
+        result = binarySearch.search(items, "sometext");
         assertEquals(result, 0);
 
         items = new String[] { "sometext" };
-        result = binarySearch.getResult(items, "dummy");
+        result = binarySearch.search(items, "dummy");
         assertEquals(result, -1);
 
         items = new String[0];
-        result = binarySearch.getResult(items, "dummy");
+        result = binarySearch.search(items, "dummy");
         assertEquals(result, -1);
 
     }
